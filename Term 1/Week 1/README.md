@@ -60,6 +60,7 @@ Scroll down through the cards to move from one concept to the next, with definit
 **Who did what?**
 
 Pavitra: Came up with the main idea of making long and difficult study materials easier and more engaging to learn. I helped develop the overall concept of Scrolly, contributed to the design and learning features, and worked on building, testing, and improving the prototype. I also contributed to the README, ethical reflection, and presentation.
+
 Minhyeok: Came up with the idea of turning the study material into flashcard-style content that users can scroll through, creating the main interaction that shaped Scrolly’s user experience. They contributed to developing and designing the prototype, testing and improving its features, and worked with me on the README, ethical reflection, and presentation.
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
