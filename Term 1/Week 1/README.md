@@ -92,5 +92,14 @@ From our point of view, Scrolly is designed to make studying easier and more eng
 
 **What is the most important thing I learned this week?**
 
+
+The biggest thing I learned this week is that AI can help turn a simple idea into an actual working product. When we started Scrolly, we just wanted to find a better way to study long and difficult materials. Using AI and Lovable, we were able to turn that idea into something people can actually interact with.
+I also realised that how you present information really matters. The same information can feel boring and overwhelming when it is in a huge block of text, but breaking it into smaller cards, examples and quizzes makes it much easier to follow. Building Scrolly made me think more about the user and not just about making the technology work.
+One thing I also learned is that AI isn't perfect. It can sometimes leave out important information or explain something incorrectly. This made me realise that we shouldn't blindly trust AI, especially when it is being used for education. We still need to check the information and think critically about what AI produces.
+
 **Where does this connect to "AI for Good"?**
-_One concrete link to ethics, sustainability or social impact._
+
+For me, Scrolly connects to AI for Good because we are using AI to make learning easier and more accessible. Our goal wasn't just to make another AI tool, but to help students who find long study materials difficult to get through.
+It connects to SDG 4 – Quality Education because Scrolly makes learning more interactive through concepts, examples, quizzes and instant feedback. Supporting five languages also means that students don't have to rely only on English to understand the material.
+At the same time, working on this project made us think about the risks of using AI in education. Not everyone has the same access to devices or internet, and AI-generated information can sometimes be wrong. So, I learned that using AI for good isn't just about having a good idea — we also have to think about who it helps, who it might leave out, and how it could be misused.
+Overall, this week showed me that AI can be really useful when it is combined with a clear purpose and human judgement.
