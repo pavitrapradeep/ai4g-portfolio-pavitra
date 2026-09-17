@@ -1,0 +1,537 @@
+{
+  "name": "Daily Wellbeing Journal with Pattern Recognition",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Daily Wellbeing Check-in",
+        "formDescription": "Take one minute to reflect on your day.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Email",
+              "fieldType": "email",
+              "fieldName": "Email",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Name",
+              "fieldName": "Name",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "How is your mood today? (1 = very low, 10 = very good)",
+              "fieldType": "number",
+              "fieldName": "MoodScore",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "How stressed do you feel today? (1 = calm, 10 = extremely stressed)",
+              "fieldType": "number",
+              "fieldName": "StressScore",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "What happened today? What is on your mind?",
+              "fieldType": "textarea",
+              "fieldName": "Entry",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "respondWithOptions": {
+            "values": {
+              "formSubmittedText": "Thank you — your reflection is on its way to your inbox."
+            }
+          }
+        }
+      },
+      "id": "938012a5-6c41-4291-a7de-3d926b77df8e",
+      "name": "Daily Wellbeing Check-in",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.6,
+      "position": [
+        0,
+        112
+      ],
+      "webhookId": "2dac1605-73fb-48ab-a7b2-17dcf29e21e5"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "date-1",
+              "name": "Date",
+              "value": "={{ $now.toISO() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "d75f0817-4f58-470f-b81c-db45fbce6ee9",
+      "name": "Prepare Entry",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1SRGNuGfHAt34Y-OY6BjMovVQNf1uxqc_d8nxqdcoGCs",
+          "mode": "list",
+          "cachedResultName": "Wellbeing Journal",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1SRGNuGfHAt34Y-OY6BjMovVQNf1uxqc_d8nxqdcoGCs/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Blad1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1SRGNuGfHAt34Y-OY6BjMovVQNf1uxqc_d8nxqdcoGCs/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Date": "={{ $json.Date }}",
+            "Email": "={{ $json.Email }}",
+            "Name": "={{ $json.Name }}",
+            "MoodScore": "={{ $json.MoodScore }}",
+            "StressScore": "={{ $json.StressScore }}",
+            "Entry": "={{ $json.Entry }}"
+          },
+          "schema": [
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "MoodScore",
+              "displayName": "MoodScore",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "StressScore",
+              "displayName": "StressScore",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Entry",
+              "displayName": "Entry",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "24da20b9-98e8-40f8-b079-c6ddacc0c3c1",
+      "name": "Save to Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        448,
+        112
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Cq1pBIcG80Crvhu8",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1SRGNuGfHAt34Y-OY6BjMovVQNf1uxqc_d8nxqdcoGCs",
+          "mode": "list",
+          "cachedResultName": "Wellbeing Journal",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1SRGNuGfHAt34Y-OY6BjMovVQNf1uxqc_d8nxqdcoGCs/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Blad1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1SRGNuGfHAt34Y-OY6BjMovVQNf1uxqc_d8nxqdcoGCs/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Email",
+              "lookupValue": "={{ $('Daily Wellbeing Check-in').item.json.Email }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3e135d31-ca0a-4ec1-b898-61cd64c6e28e",
+      "name": "Get Recent History",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        672,
+        112
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "37lvaLiMNYbvDMZR",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const LF = String.fromCharCode(10);\n// All rows returned for this user; keep only the 7 most recent (assumed appended chronologically).\nconst rows = $input.all().map(i => i.json).filter(r => Object.keys(r).length > 0);\nconst recent = rows.slice(-7);\nconst lines = recent.map(r => 'Date: ' + r.Date + ' | Mood: ' + r.MoodScore + '/10 | Stress: ' + r.StressScore + '/10 | Note: ' + r.Entry);\n\n// The current submission is carried from the Prepare Entry node.\nconst today = $(\"Prepare Entry\").first().json;\n\nreturn [{ json: {\n  Email: today.Email,\n  Name: today.Name,\n  MoodScore: today.MoodScore,\n  StressScore: today.StressScore,\n  Entry: today.Entry,\n  previousEntries: lines.join(LF),\n} }];"
+      },
+      "id": "6897ea20-f143-4547-a5b0-5f7c2815ce9f",
+      "name": "Format History",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        896,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Today's entry:\nMood score: {{ $json.MoodScore }}/10\nStress score: {{ $json.StressScore }}/10\nWhat happened: {{ $json.Entry }}\n\nPrevious entries (oldest first):\n{{ $json.previousEntries }}\n\nRespond with the JSON structure described in your instructions.",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "You are a supportive, non-judgmental wellbeing assistant helping someone reflect on their day through a journaling app. Read the user's current entry together with their recent past entries. Write a short, warm reflection of 2-3 sentences. Gently note any recurring pattern you observe across multiple entries, for example repeated stress about work, sleep or relationships — only mention a pattern if there is real evidence across several entries, never invent one. Suggest one small, concrete, realistic action. Finally assess a stressAlert level of low, medium or high. Use high only when there are clear signs of ongoing serious distress, hopelessness, or language suggesting the person may be unsafe. Be conservative, but do not miss genuine warning signs. Respond ONLY with valid JSON, with no text before or after it, in exactly this structure: {\"reflection\": \"\", \"pattern\": \"\", \"tip\": \"\", \"stressAlert\": \"\"}"
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "id": "3ae11642-235d-4cdb-9384-1663306e56c0",
+      "name": "Generate Reflection",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        1120,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini",
+          "cachedResultName": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "id": "46b75ea7-9df3-4405-b51d-ea2db93b0825",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        1200,
+        336
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": null,
+          "name": "Gateway credits",
+          "__aiGatewayManaged": true
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const history = $(\"Format History\").first().json;\nlet aiText = $input.first().json.text || \"\";\n\n// Strip any markdown code fences the model may have added.\nconst FENCE = String.fromCharCode(96);\nlet cleaned = String(aiText).replace(new RegExp(FENCE + '{3}' + '(json)?', 'gi'), '').replace(new RegExp(FENCE + '{3}', 'g'), '').trim();\n\nlet out;\ntry {\n  const parsed = JSON.parse(cleaned);\n  out = {\n    reflection: parsed.reflection || \"\",\n    pattern: parsed.pattern || \"\",\n    tip: parsed.tip || \"\",\n    stressAlert: String(parsed.stressAlert || \"low\").toLowerCase(),\n  };\n} catch (e) {\n  out = {\n    reflection: \"Thank you for checking in today. We could not generate a full reflection this time, but your entry has been saved safely.\",\n    pattern: \"\",\n    tip: \"Take a slow breath and be kind to yourself today.\",\n    stressAlert: \"low\",\n  };\n}\n\nout.Email = history.Email;\nout.Name = history.Name;\n\nreturn [{ json: out }];"
+      },
+      "id": "5ce28591-d71b-42d1-8d8c-d96562a44d0a",
+      "name": "Parse AI Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1472,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "combinator": "and",
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "stress-high",
+              "leftValue": "={{ $json.stressAlert }}",
+              "rightValue": "high",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "9b37a329-a246-415e-8205-5ae2bf8cb0a5",
+      "name": "Check Stress Alert",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1696,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "murat.orh3nn@gmail.com",
+        "toEmail": "={{ $json.Email }}",
+        "subject": "Check-in: support is available",
+        "emailFormat": "text",
+        "text": "=Hi {{ $json.Name }}, we noticed some difficult things in your recent check-ins. You do not have to deal with this alone. In the Netherlands you can call 113 Zelfmoordpreventie free of charge, 24/7, on 113 or 0800-0113. You can also speak to your GP, a therapist, or someone you trust. This message was generated automatically and is not a diagnosis — please reach out to a real person.",
+        "options": {}
+      },
+      "id": "2b4eab2d-65d1-4224-a89b-5a7c4b8447f7",
+      "name": "Send Support Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1920,
+        16
+      ],
+      "webhookId": "214b57e1-a758-4fd0-abf0-d02ff5fd5a6d",
+      "credentials": {
+        "smtp": {
+          "id": "tMdcapy1t5nInoFP",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "murat.orh3nn@gmail.com",
+        "toEmail": "={{ $json.Email }}",
+        "subject": "Your daily reflection",
+        "emailFormat": "text",
+        "text": "=Hi {{ $json.Name }},\n{{ $json.reflection }}\n{{ $json.pattern }}\nToday's tip: {{ $json.tip }}\nSee you tomorrow.",
+        "options": {}
+      },
+      "id": "6dbdcddb-26e6-4662-87b9-f82ebd9911c2",
+      "name": "Send Reflection Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1920,
+        208
+      ],
+      "webhookId": "03e0cbae-6f61-4dc5-b04c-b897c1241316",
+      "credentials": {
+        "smtp": {
+          "id": "tMdcapy1t5nInoFP",
+          "name": "SMTP account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Daily Wellbeing Check-in": {
+      "main": [
+        [
+          {
+            "node": "Prepare Entry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Entry": {
+      "main": [
+        [
+          {
+            "node": "Save to Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Get Recent History",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Recent History": {
+      "main": [
+        [
+          {
+            "node": "Format History",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format History": {
+      "main": [
+        [
+          {
+            "node": "Generate Reflection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Reflection": {
+      "main": [
+        [
+          {
+            "node": "Parse AI Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Generate Reflection",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse AI Output": {
+      "main": [
+        [
+          {
+            "node": "Check Stress Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Stress Alert": {
+      "main": [
+        [
+          {
+            "node": "Send Support Email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Reflection Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "07402c50-18d6-47fc-8686-d01a5198a12b",
+  "meta": {
+    "instanceId": "d96737618f0891fb2b7b45a03ed560643fdb43429543874389dabf209d49f9c7"
+  },
+  "nodeGroups": [
+    {
+      "id": "8404e63b-e4d7-4f97-aa8e-4decc7f446b3",
+      "name": "Log & load history",
+      "nodeIds": [
+        "d75f0817-4f58-470f-b81c-db45fbce6ee9",
+        "24da20b9-98e8-40f8-b079-c6ddacc0c3c1",
+        "3e135d31-ca0a-4ec1-b898-61cd64c6e28e",
+        "6897ea20-f143-4547-a5b0-5f7c2815ce9f"
+      ],
+      "description": "Saves today's check-in to Google Sheets, then reads this person's recent rows back and formats them into a short history block."
+    },
+    {
+      "id": "d7e6cacd-b7d2-4935-bd86-9d8d4bd91558",
+      "name": "Generate reflection",
+      "nodeIds": [
+        "3ae11642-235d-4cdb-9384-1663306e56c0",
+        "46b75ea7-9df3-4405-b51d-ea2db93b0825",
+        "5ce28591-d71b-42d1-8d8c-d96562a44d0a"
+      ],
+      "description": "Sends the entry and history to the AI model for a warm reflection and pattern check, then parses the JSON into reflection, tip and a stress alert"
+    },
+    {
+      "id": "2434a7e6-47c5-4a04-8441-f1db7214e065",
+      "name": "Send response",
+      "nodeIds": [
+        "9b37a329-a246-415e-8205-5ae2bf8cb0a5",
+        "2b4eab2d-65d1-4224-a89b-5a7c4b8447f7",
+        "6dbdcddb-26e6-4662-87b9-f82ebd9911c2"
+      ],
+      "description": "If the AI flagged high stress, emails crisis support resources; otherwise emails the personal daily reflection."
+    }
+  ],
+  "id": "0mmINbwcYnHhsWX8",
+  "tags": []
+}
