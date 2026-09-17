@@ -26,10 +26,14 @@ _List the files, or link to them. Notebook exports, screenshots, scripts._
 **Project title:**
 
 **My pair partner:**
+Murad 
 
 **Tool we had to use:**
+n8n
 
 **SDG we had to address:**
+
+SDG 3 — Good Health and Well-Being: Our project addresses SDG 3 by using AI to support mental and emotional wellbeing. Daily Wellbeing Journal encourages users to regularly check in with their mood, stress, sleep, and thoughts, while analyzing previous entries to help them recognize patterns. By providing personalized reflections, the project promotes self-awareness and encourages users to pay more attention to their overall wellbeing.
 
 **What problem does it solve, and for whom?**
 _Name a real, specific user. "Everyone" is not a user._
@@ -47,7 +51,8 @@ _Short instructions so someone else can start it._
 _Be honest about the split of work between you and your partner._
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
-_Every hackathon requires this. One honest paragraph beats three vague ones._
+
+Daily Wellbeing Journal deals with personal information like mood, stress, sleep, and journal entries, so privacy is an important concern. There is also a chance that the AI could misunderstand what a user is feeling and give an unsuitable response. Another risk is that someone might rely too much on the tool instead of seeking professional help when needed. To reduce these risks, we should keep user data secure, only collect the information we need, avoid giving medical diagnoses, and clearly explain that the tool is for self-reflection and not a replacement for professional support
 
 ### Checklist
 - [ ] Prototype code (or export / workflow file) is in `hackathon/`
@@ -73,5 +78,8 @@ _Every hackathon requires this. One honest paragraph beats three vague ones._
 
 **What is the most important thing I learned this week?**
 
+The most important thing I learned this week is how different technologies can be connected to create a complete working project. I learned how n8n can connect forms, Google Sheets, AI, and Gmail to automate a process. I also learned that building an AI project is not just about making it work, but also thinking about privacy, ethics, and how it could affect users.
+
 **Where does this connect to "AI for Good"?**
-_One concrete link to ethics, sustainability or social impact._
+
+Our project connects to AI for Good by using AI to support people's wellbeing. Instead of using AI only for entertainment or productivity, we use it to help users understand their emotions, notice wellbeing patterns, and encourage regular self-reflection. We also consider privacy and responsible use of AI, making sure it supports users without replacing professional help.
