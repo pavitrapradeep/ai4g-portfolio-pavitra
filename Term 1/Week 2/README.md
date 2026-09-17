@@ -49,8 +49,6 @@ We built Daily Wellbeing Journal, an automated stress journaling tool that gives
 https://drive.google.com/file/d/1PTzte61DTfMhqIoOEr56FRyUXYxQiXVo/view?usp=sharing
 https://drive.google.com/file/d/1S6EJy-ixSzoYPQltjYdkJYZBxj7vz7rF/view?usp=sharing
 
-hack.png
-hackathon.png
 
 **How do I run it?**
 
