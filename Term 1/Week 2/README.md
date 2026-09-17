@@ -24,9 +24,10 @@ _List the files, or link to them. Notebook exports, screenshots, scripts._
 > Write them down here once you know them.
 
 **Project title:**
+Daily Wellbeing journal
 
 **My pair partner:**
-Murad 
+Murat
 
 **Tool we had to use:**
 n8n
@@ -35,24 +36,41 @@ n8n
 
 SDG 3 — Good Health and Well-Being: Our project addresses SDG 3 by using AI to support mental and emotional wellbeing. Daily Wellbeing Journal encourages users to regularly check in with their mood, stress, sleep, and thoughts, while analyzing previous entries to help them recognize patterns. By providing personalized reflections, the project promotes self-awareness and encourages users to pay more attention to their overall wellbeing.
 
+
 **What problem does it solve, and for whom?**
-_Name a real, specific user. "Everyone" is not a user._
+
+Daily Wellbeing Journal is designed for young adults in specific who wants to journal, monitor their stress, and better understand their experiences over time. Stress can change from day to day, and it is not always easy to recognise what is affecting it or how it has changed. The journal provides a private space to record stress levels and express thoughts without always needing to talk to another person. By keeping a history of entries, it helps the user identify patterns, reflect on their experiences, and receive simple stress-relief tips, supportive affirmations, or suggestions based on what they have shared.
 
 **What did you build?**
-_Two or three sentences. What can a user actually do with it?_
 
-**Link to the live thing (if any):**
-_Deployed URL, workflow export, video demo - whatever proves it works._
+We built Daily Wellbeing Journal, an automated stress journaling tool that gives users a private space to track and reflect on their wellbeing. Through a form, users record how stressed they feel, how calm they feel, and a journal entry about their thoughts, feelings, or daily experiences. The responses are stored in Google Sheets, and OpenAI analyses the current entry along with previous entries to identify patterns over time. It then generates a personalised reflection, supportive affirmation, or simple stress-relief tips based on what the user has shared, which is sent to their Gmail.
+
+**Link to the live thing (i[f any):**
+https://drive.google.com/file/d/1PTzte61DTfMhqIoOEr56FRyUXYxQiXVo/view?usp=sharing
+https://drive.google.com/file/d/1S6EJy-ixSzoYPQltjYdkJYZBxj7vz7rF/view?usp=sharing
+
+hack.png
+hackathon.png
 
 **How do I run it?**
-_Short instructions so someone else can start it._
+
+1.Download the Daily Wellbeing Journal .json workflow.
+2.Open n8n and import the JSON file.
+3.Connect the required Google Sheets and OpenAI credentials.
+4.Open the Form Trigger link and fill in the journal form.
+5.Submit the form to trigger the workflow.
+6.The response is stored in Google Sheets, together with the user's previous entries.
+7.OpenAI analyses the current stress level and journal entry, while also looking at previous entries to identify patterns in the user's wellbeing over time.
+8.Based on this analysis, it generates a personalised reflection and supportive message.
+9.The response is automatically sent to the connected Gmail account.
 
 **Who did what?**
-_Be honest about the split of work between you and your partner._
+
+We equally contributed to the project. We worked together on designing and building the workflow, setting up the n8n nodes, integrating Google Sheets and AI, testing and troubleshooting the automation, making improvements and preparing the presentation, Both of us were involved in all major parts of the project.
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
 
-Daily Wellbeing Journal deals with personal information like mood, stress, sleep, and journal entries, so privacy is an important concern. There is also a chance that the AI could misunderstand what a user is feeling and give an unsuitable response. Another risk is that someone might rely too much on the tool instead of seeking professional help when needed. To reduce these risks, we should keep user data secure, only collect the information we need, avoid giving medical diagnoses, and clearly explain that the tool is for self-reflection and not a replacement for professional support
+Daily Wellbeing Journal deals with personal information like mood, stress, sleep, and journal entries, so privacy is an important concern. There is also a chance that the AI could misunderstand what a user is feeling, identify a pattern incorrectly, or give an unsuitable response. Another risk is that someone might rely too much on the tool instead of seeking professional help when needed. The system could also fail because of technical issues, such as the workflow being down, an email not being delivered, or the AI not generating a response correctly. To reduce these risks, we should keep user data secure, only collect the information we need, avoid giving medical diagnoses, and clearly explain that the tool is for self-reflection and not a replacement for professional support. The AI should also be conservative when identifying serious distress and provide appropriate support information rather than trying to handle a crisis itself. Ultimately, automation should support the user’s wellbeing and reflection, while important health or safety decisions should remain with the user and qualified human professionals.
 
 ### Checklist
 - [ ] Prototype code (or export / workflow file) is in `hackathon/`
