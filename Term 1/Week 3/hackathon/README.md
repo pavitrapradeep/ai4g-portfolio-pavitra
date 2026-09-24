@@ -31,7 +31,15 @@ The Netherlands had about **18.0 million inhabitants on 1 January 2025**, of who
 
 This does not mean that everyone born abroad has difficulty with Dutch. However, it shows that a substantial part of the population has an international background, making accessible communication an important consideration.
 
----
+
+--- User group
+
+Intended users: international and exchange students, and other newcomers with little or no Dutch. They paste text from a phone or laptop, often under time pressure, and act on the result themselves.
+Not intended users:
+People who need a certified or legally valid translation.
+People in a legal or immigration dispute (for example a decision from the IND).
+People who need to translate images, scans, audio or handwriting. The prototype accepts pasted text only.
+
 
 ## 🌍 Sustainable Development Goal
 
