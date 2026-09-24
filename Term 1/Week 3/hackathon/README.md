@@ -2,7 +2,7 @@
 
 ### AI for Good - Hackathon 3: Equal Access
 
-Dutch4You is an AI-powered Streamlit application that helps non-Dutch speakers understand Dutch letters, notices, and official communications.
+Dutch4You is an AI-powered Streamlit application that helps international students understand Dutch letters, notices, and official communications.
 
 The user pastes Dutch text into the application and receives:
 
@@ -331,11 +331,3 @@ Users should avoid submitting highly sensitive personal information unless they 
 * Statistics Netherlands (CBS) - **Population by origin and country of birth**
 
 ---
-
-## 👥 Hackathon
-
-**Course:** AI for Good
-**Hackathon:** Hackathon 3 - Equal Access
-**Theme:** Equal Access
-**SDG:** 10 - Reduced Inequalities
-**Technology:** Python + Gemini API + Streamlit
