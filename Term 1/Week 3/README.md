@@ -41,6 +41,9 @@ SDG 10, Reduced Inequalities, in particular target 10.2 on the social and econom
 Dutch4You addresses the language barrier faced by international students, newcomers, and other non-Dutch speakers in the Netherlands when dealing with important Dutch-language communication.
 Users may receive Dutch messages, letters, or official communication from organisations such as municipalities, universities, banks, landlords, or other services. Not fully understanding these messages can make it difficult to identify what action is required, what deadlines apply, or what information is important.
 Dutch4You helps reduce this information gap by converting Dutch communication into clear English explanations, while highlighting important actions, deadlines, and relevant information.
+Evidence:
+There are 131,004 international degree students in Dutch higher education, representing 16.6% of the total student population in 2024/25. This shows that international students are a significant part of Dutch higher education and supports the relevance of making important communication more accessible to students who may not yet be comfortable with Dutch
+Source: Nuffic, Facts and figures: international students in Dutch higher education 2025. Nuffic — International Students in Dutch Higher Education
 
 Intended users: International students and newcomers who can communicate in English but have limited Dutch proficiency.
 Not intended for: Native Dutch speakers who do not need translation, or for replacing professional/legal interpretation in high-stakes situations.
@@ -86,9 +89,8 @@ The documentation, project description, ethical reflection, and overall project 
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
 
-The biggest risk is that a user could trust an incorrect AI explanation when they cannot independently verify the original Dutch text. This could be particularly harmful when the communication contains a legal deadline, healthcare information, payment requirement, or another important instruction.
-To reduce this risk, Dutch4You does not present itself as an official translator or professional advisor. The application provides a confidence level and warning system, and low-confidence results tell users to verify the information with an official source or Dutch speaker.
-There is also a privacy risk because users may paste personal information from official letters. Users should therefore avoid submitting highly sensitive information unless they understand how the underlying AI service processes it.
+The main ethical risk of Dutch4You is that users may rely on an incorrect AI-generated explanation when they cannot independently understand the original Dutch text. This could be particularly harmful if the message contains a deadline, payment, healthcare information, or another important requirement. To reduce this risk, the application provides a confidence level and warning when the AI is uncertain, and users are advised to verify important information with an official source or Dutch speaker. The system is also instructed not to guess when the input is unclear or does not appear to be Dutch, and invalid AI responses are handled instead of being shown as reliable information. Privacy is another concern because users may paste personal information from official letters, so the tool advises users to avoid submitting highly sensitive information unnecessarily. These safeguards are important because a tool designed to reduce information inequality should not create a new risk by making users overly dependent on potentially incorrect AI output.
+
 
 ### Checklist
 - [ ] Prototype code (or export / workflow file) is in `hackathon/`
