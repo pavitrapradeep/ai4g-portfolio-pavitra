@@ -24,15 +24,26 @@ _List the files, or link to them. Notebook exports, screenshots, scripts._
 > Write them down here once you know them.
 
 **Project title:**
+Dutch4You
 
 **My pair partner:**
+Evaldas
 
 **Tool we had to use:**
+Gemini API
 
 **SDG we had to address:**
+SDG 10, Reduced Inequalities, in particular target 10.2 on the social and economic inclusion of everyone. A person who can't read Dutch has a disadvantage when dealing with housing, banks, the municipality and the university. Those are the places where rules and deadlines are written only in Dutch. Dutch4You reduces that gap by giving newcomers the same understanding a Dutch speaker gets immediately.
+
 
 **What problem does it solve, and for whom?**
-_Name a real, specific user. "Everyone" is not a user._
+
+Dutch4You addresses the language barrier faced by international students, newcomers, and other non-Dutch speakers in the Netherlands when dealing with important Dutch-language communication.
+Users may receive Dutch messages, letters, or official communication from organisations such as municipalities, universities, banks, landlords, or other services. Not fully understanding these messages can make it difficult to identify what action is required, what deadlines apply, or what information is important.
+Dutch4You helps reduce this information gap by converting Dutch communication into clear English explanations, while highlighting important actions, deadlines, and relevant information.
+
+Intended users: International students and newcomers who can communicate in English but have limited Dutch proficiency.
+Not intended for: Native Dutch speakers who do not need translation, or for replacing professional/legal interpretation in high-stakes situations.
 
 **What did you build?**
 _Two or three sentences. What can a user actually do with it?_
