@@ -46,19 +46,49 @@ Intended users: International students and newcomers who can communicate in Engl
 Not intended for: Native Dutch speakers who do not need translation, or for replacing professional/legal interpretation in high-stakes situations.
 
 **What did you build?**
-_Two or three sentences. What can a user actually do with it?_
+
+We built Dutch4You, an AI-powered web application designed to help non-Dutch speakers understand Dutch messages and official communication.
+The user can provide Dutch text to the application. Dutch4You then uses the Gemini API to analyse the text and generate an English explanation that is easier for the user to understand.
+The purpose is not simply to perform a word-for-word translation. We wanted the application to focus on the information that is useful to someone who needs to understand and act on the message.
+
+
 
 **Link to the live thing (if any):**
-_Deployed URL, workflow export, video demo - whatever proves it works._
+
+ https://dutch4you.streamlit.app/
+
+The live prototype demonstrates the complete process from providing Dutch text to receiving the AI-generated English explanation.
 
 **How do I run it?**
-_Short instructions so someone else can start it._
+
+To run Dutch4You locally:
+Clone or download the project repository.
+Make sure Python is installed.
+Install the required dependencies from the project's requirements file.
+Configure the Gemini API key in the required environment/configuration.
+Start the Streamlit application.
+Open the local URL provided by Streamlit.
+Enter or paste Dutch text into the application.
+Submit the text and review the generated English explanation.
+The Streamlit application can be started using:
+streamlit run app.py
+
+The filename should be replaced with the actual entry-point file if the project uses a different filename.
+A user does not need to interact directly with the Gemini API. The application handles the communication with the AI model in the background.
 
 **Who did what?**
-_Be honest about the split of work between you and your partner._
+
+The work was divided between the both of us, with some parts completed individually and other parts done collaboratively.
+Evaldas worked primarily on the Streamlit application and its functionality, including the implementation of the application flow.
+I focused primarily on the interface and UI design, including how the application and its results are presented to the user.
+Both of us worked together on the Gemini API setup and API key configuration, as well as testing the AI functionality.
+The documentation, project description, ethical reflection, and overall project development were completed collaboratively.
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
-_Every hackathon requires this. One honest paragraph beats three vague ones._
+
+The biggest risk is that a user could trust an incorrect AI explanation when they cannot independently verify the original Dutch text. This could be particularly harmful when the communication contains a legal deadline, healthcare information, payment requirement, or another important instruction.
+To reduce this risk, Dutch4You does not present itself as an official translator or professional advisor. The application provides a confidence level and warning system, and low-confidence results tell users to verify the information with an official source or Dutch speaker.
+There is also a privacy risk because users may paste personal information from official letters. Users should therefore avoid submitting highly sensitive information unless they understand how the underlying AI service processes it.
 
 ### Checklist
 - [ ] Prototype code (or export / workflow file) is in `hackathon/`
@@ -84,5 +114,14 @@ _Every hackathon requires this. One honest paragraph beats three vague ones._
 
 **What is the most important thing I learned this week?**
 
+The most important thing I learned was that building an AI solution is not only about making the technology work. We first need to understand the actual problem and the people affected by it.
+For Dutch4You, we realised that the problem is not simply that newcomers cannot translate Dutch. They need to understand what important communication means and what action they are expected to take.
+I also learned that AI outputs need to be handled carefully. A system can produce a convincing answer that is still incorrect, so testing, error handling, confidence indicators, and clear limitations are important parts of building an AI application.
+
 **Where does this connect to "AI for Good"?**
-_One concrete link to ethics, sustainability or social impact._
+Dutch4You directly connects to SDG 10 – Reduced Inequalities, particularly Target 10.2, which focuses on promoting the social and economic inclusion of everyone. Our project focuses on one specific barrier to inclusion: language and access to information.
+For international students, newcomers, migrants, and other people who are still learning Dutch, language can make it harder to access and act on information that Dutch-speaking residents may understand immediately. This is especially important when dealing with universities, housing organisations, banks, municipalities, healthcare services, and other public services. A person may receive the same information as everyone else, but if they cannot understand the language, they may not have the same ability to respond to it or benefit from the service.
+Dutch4You aims to reduce this gap by providing an additional layer of understanding. Instead of only translating Dutch into English, it explains the message in simpler language and identifies practical information such as deadlines, required actions, and amounts. This can help users understand not only what the message says, but also what they are expected to do.
+The project therefore supports the idea behind Target 10.2 by making important information more accessible to people who may otherwise face a language barrier. The goal is not to give newcomers an advantage over Dutch speakers, but to help reduce an existing accessibility gap so that language is less of a barrier when accessing everyday services and information.
+The project also demonstrates an important aspect of AI for Good: responsible use of technology. While AI can help reduce an information-access inequality, it can also create new risks if its output is inaccurate. Someone who cannot read the original Dutch text may be more likely to rely on the AI's explanation. Therefore, Dutch4You includes confidence information and warnings and encourages users to verify uncertain or important information with an official source or Dutch speaker.
+In this way, the project connects to AI for Good on two levels: using AI to improve accessibility and inclusion, while also considering the ethical risks of using AI for people who may depend on its output.
