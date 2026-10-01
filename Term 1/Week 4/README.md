@@ -99,7 +99,6 @@ https://www.youtube.com/watch?v=EHNvl7A7yRA
 
 **How do I run it?**
 
-How do I run it?
 
 1. Open ComfyUI and load the provided workflow JSON.
 2. Ensure the required LTX-2.3 models and supporting files are installed.
