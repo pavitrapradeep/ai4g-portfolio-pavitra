@@ -24,7 +24,7 @@ _List the files, or link to them. Notebook exports, screenshots, scripts._
 > Write them down here once you know them.
 
 **Project title:**
-Below the waterline:climate adaptation in The Netherlands
+Below the Waterline:climate adaptation in The Netherlands
 
 **My pair partner:**
 Muhammad Iqbal
