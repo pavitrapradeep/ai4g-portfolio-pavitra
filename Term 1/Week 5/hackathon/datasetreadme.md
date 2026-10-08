@@ -1,173 +1,206 @@
-Dataset Card — Taiwanese Bankruptcy Prediction
+# Dataset Card — Taiwanese Bankruptcy Prediction
 
-Dataset overview
+## 1. Dataset Overview
 
-Dataset name: Taiwanese Bankruptcy Prediction
-
-Source: UCI Machine Learning Repository
-UCI dataset: Taiwanese Bankruptcy Prediction
-DOI: 10.24432/C5004D
-link: https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction
+- **Dataset name:** Taiwanese Bankruptcy Prediction
+- **Source:** UCI Machine Learning Repository
+- **UCI dataset:** Taiwanese Bankruptcy Prediction
+- **DOI:** 10.24432/C5004D
+- **Dataset link:** https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction
+- **Classification type:** Binary classification
+- **Total observations:** 6,819 companies
+- **Predictor features:** 95
+- **Target variable:** `Bankrupt?`
+- **Total columns:** 96
+- **Missing values:** None according to the UCI documentation
 
 The dataset is a real-world corporate-finance dataset used for binary classification. It contains financial indicators for Taiwanese companies and a target variable indicating whether a company was classified as bankrupt.
 
-Source: UCI Machine Learning Repository — Taiwanese Bankruptcy Prediction
+---
 
-Who collected the data?
+## 2. Who Collected the Data?
 
-The data were collected from the Taiwan Economic Journal (TEJ). The dataset covers the years 1999–2009. Company bankruptcy was defined according to the business regulations of the Taiwan Stock Exchange.
+- **Original data source:** Taiwan Economic Journal (TEJ)
+- **Coverage period:** 1999–2009
+- **Geographic scope:** Taiwan
+- **Bankruptcy definition:** Based on the business regulations of the Taiwan Stock Exchange
+- **Donated to UCI:** 27 June 2020
 
-The dataset was donated to the UCI Machine Learning Repository on 27 June 2020.
+The dataset was collected from the Taiwan Economic Journal and subsequently documented and published through the UCI Machine Learning Repository.
 
-Population
+---
 
-The dataset represents companies in Taiwan during the 1999–2009 period. Each observation represents a company and contains financial information used to classify its bankruptcy status.
+## 3. Population
 
-The dataset therefore represents a specific historical population and should not automatically be assumed to represent companies worldwide, companies in other countries, or companies in different economic periods.
+The dataset represents **companies in Taiwan during the 1999–2009 period**.
 
-Dataset size
+Each observation represents one company and contains financial information used to classify its bankruptcy status.
 
-Rows / instances: 6,819 companies
+### Population limitations
 
-Predictor features: 95
+- It represents a specific historical population of Taiwanese companies.
+- It should not automatically be assumed to represent:
+  - Companies worldwide
+  - Companies in other countries
+  - Companies in different economic periods
+  - Current financial conditions
 
-Target variable: Bankrupt?
+---
 
-Total columns: 96
+## 4. Dataset Size
 
-Missing values: None according to the UCI documentation
+| Property | Value |
+|---|---:|
+| Companies / rows | 6,819 |
+| Predictor features | 95 |
+| Target variable | `Bankrupt?` |
+| Total columns | 96 |
+| Missing values | None |
+| Classification | Binary |
 
-Classification type: Binary classification
+---
 
-Target variable
+## 5. Target Variable
 
-The target column is:
+The target variable is:
 
-Bankrupt?
+**`Bankrupt?`**
 
-0 = Non-bankrupt
+- `0` = Non-bankrupt
+- `1` = Bankrupt
 
-1 = Bankrupt
+### Class distribution
 
-The dataset contains:
+| Class | Number of companies | Percentage |
+|---|---:|---:|
+| Non-bankrupt | 6,599 | 96.77% |
+| Bankrupt | 220 | 3.23% |
+| **Total** | **6,819** | **100%** |
 
-6,599 non-bankrupt companies (96.77%)
+The dataset therefore has a substantial **class-imbalance problem**, with bankrupt companies representing only a small proportion of the observations.
 
-220 bankrupt companies (3.23%)
+Because of this imbalance, accuracy alone is not an appropriate measure of model performance. In our project, **recall for the bankruptcy class** was selected as the primary cross-validation metric because failing to identify an actually bankrupt company is an important error for the intended financial-risk screening use case.
 
-This creates a substantial class-imbalance problem, because bankrupt companies represent only a small proportion of the observations.
+---
 
-Because of this imbalance, accuracy alone is not an appropriate measure of model performance. In our project, recall for the bankruptcy class was selected as the primary cross-validation metric because failing to identify an actually bankrupt company is an important error for the intended financial-risk screening use case.
+## 6. Features
 
-Features
+The dataset contains **95 financial indicators** covering areas including:
 
-The dataset contains 95 financial indicators covering areas including:
+- Profitability
+- Liquidity
+- Leverage and solvency
+- Operating performance
+- Asset efficiency
+- Working capital
+- Cash flow
+- Revenue and income growth
+- Financial ratios
 
-Profitability
+### Examples of financial indicators
 
-Liquidity
+- Return on Assets (ROA)
+- Current Ratio
+- Acid Test
+- Liability-to-Equity Ratio
+- Working Capital to Total Assets
+- Interest Coverage Ratio
+- Net Income to Total Assets
+- Total Asset Turnover
+- Cash Flow to Total Assets
+- Return on Total Asset Growth
 
-Leverage and solvency
+The UCI documentation provides the complete list and descriptions of the 95 financial features.
 
-Operating performance
+---
 
-Asset efficiency
+## 7. Licence
 
-Working capital
+- **Licence:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+- The licence permits sharing and adaptation provided that appropriate credit is given.
 
-Cash flow
+### Dataset citation
 
-Revenue and income growth
+> Taiwanese Bankruptcy Prediction [Dataset]. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C5004D
 
-Financial ratios
+---
 
-Examples include:
+## 8. Known Limitations
 
-Return on Assets (ROA)
-
-Current Ratio
-
-Acid Test
-
-Liability-to-Equity Ratio
-
-Working Capital to Total Assets
-
-Interest Coverage Ratio
-
-Net Income to Total Assets
-
-Total Asset Turnover
-
-Cash Flow to Total Assets
-
-Return on Total Asset Growth
-
-The UCI documentation provides the full list and descriptions of the 95 features.
-
-Licence
-
-The UCI Machine Learning Repository lists this dataset under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence.
-
-The licence permits sharing and adaptation provided that appropriate credit is given.
-
-Dataset citation:
-
-Taiwanese Bankruptcy Prediction [Dataset]. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C5004D
-
-Known limitations
-
-1. Population limitation
+### 8.1 Population limitation
 
 The dataset represents Taiwanese companies, so the model should not automatically be applied to companies in other countries or economic environments.
 
-2. Time-period limitation
+### 8.2 Time-period limitation
 
-The financial data cover 1999–2009. Economic conditions, regulations, financial markets and business practices can change over time, so model performance may differ on more recent companies.
+The financial data cover **1999–2009**. Economic conditions, regulations, financial markets and business practices can change over time, so model performance may differ when applied to more recent companies.
 
-3. Class imbalance
+### 8.3 Class imbalance
 
-Only 3.23% of observations are bankrupt, meaning that a model can achieve high overall accuracy while still failing to identify many bankrupt companies. This is why our evaluation emphasizes bankruptcy recall, precision and F1 rather than accuracy alone.
+Only **3.23%** of observations are classified as bankrupt. A model could therefore achieve high overall accuracy while still failing to identify many bankrupt companies.
 
-4. Limited scope of financial information
+For this reason, our evaluation emphasizes:
 
-The model uses the financial indicators available in the dataset. Other factors that could influence bankruptcy risk—such as management decisions, market conditions, industry changes, macroeconomic conditions or qualitative business information—are not necessarily represented.
+- Recall
+- Precision
+- F1-score
 
-5. Intended use
+rather than accuracy alone.
 
-The model should be used as a financial-risk screening and decision-support tool, not as an automatic loan-approval/rejection system or a definitive statement that a company will become bankrupt. A qualified financial risk analyst should consider the prediction alongside additional financial and contextual information.
+### 8.4 Limited scope of financial information
 
-Why we selected this dataset
+The model uses the financial indicators available in the dataset. Other factors that could influence bankruptcy risk may not be represented, including:
 
-This dataset meets the requirements of the AI for Good — Hackathon 5 assignment because it is:
+- Management decisions
+- Market conditions
+- Industry changes
+- Macroeconomic conditions
+- Qualitative business information
 
-Real and documented: collected from the Taiwan Economic Journal and documented by UCI.
+### 8.5 Intended use
 
-A classification problem: the target is the binary Bankrupt? variable.
+The model should be used as a **financial-risk screening and decision-support tool**, not as:
 
-Large enough: 6,819 rows and 95 usable predictor features.
+- An automatic loan-approval system
+- An automatic loan-rejection system
+- A definitive statement that a company will become bankrupt
 
-Not a prohibited dataset: it is not a built-in scikit-learn dataset.
+A qualified financial risk analyst should consider the prediction alongside additional financial and contextual information.
 
-Relevant to SDG 8: 
-corporate financial distress can have consequences for employment, income and economic security.
+---
 
-The dataset provides a suitable basis for comparing KNN, Logistic Regression and Random Forest as required by the project.
+## 9. Why We Selected This Dataset
 
-Data file
+This dataset meets the requirements of the **AI for Good — Hackathon 5** assignment because it is:
 
-The project uses the original data.csv file associated with the UCI dataset. 
-The UCI documentation lists the CSV file as approximately 10.9 MB, which is below the assignment's 25 MB threshold.
+- **Real and documented:** Collected from the Taiwan Economic Journal and documented by UCI.
+- **A classification problem:** The target is the binary `Bankrupt?` variable.
+- **Large enough:** Contains 6,819 rows and 95 predictor features.
+- **Not a prohibited dataset:** It is not a built-in scikit-learn dataset.
+- **Relevant to SDG 8:** Corporate financial distress can have consequences for employment, income and economic security.
+- **Suitable for model comparison:** It provides a basis for comparing KNN, Logistic Regression and Random Forest as required by the project.
 
-Source and citation
+---
 
-UCI Machine Learning Repository:
-Taiwanese Bankruptcy Prediction
+## 10. Data File
 
-DOI: 10.24432/C5004D
+The project uses the original `data.csv` file associated with the UCI dataset.
 
-Original data source: Taiwan Economic Journal (TEJ), 1999–2009.
+- **File:** `data.csv`
+- **Approximate size:** 10.9 MB
+- **Assignment limit:** 25 MB
 
-Licence: Creative Commons Attribution 4.0 International (CC BY 4.0).
+The dataset is therefore below the assignment's 25 MB threshold.
 
-https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction
+---
+
+## 11. Source and Citation
+
+**UCI Machine Learning Repository**
+
+**Dataset:** Taiwanese Bankruptcy Prediction
+
+- **DOI:** 10.24432/C5004D
+- **Original data source:** Taiwan Economic Journal (TEJ), 1999–2009
+- **Licence:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+- **UCI:** https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction
