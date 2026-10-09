@@ -137,12 +137,13 @@ There are several risks specific to our model and the data we used. Our model pr
 
 *Only fill this in for the week your group was selected to present. You need at least **one** of these across the whole term.*
 
-- [ ] My group presented in this week
-- [ ] Slides are in `presentation/`
-- [ ] Proof of the live demo is in `presentation/` (recording, screenshots, or link)
+- [x] My group presented in this week
+- [x] Slides are in `presentation/`
+- [x] Proof of the live demo is in `presentation/` (recording, screenshots, or link)
 
 **How did it go? What would I do differently next time?**
 
+The presentation went well, and I was able to explain our project and demonstrate how our model works. It helped me improve my confidence in presenting technical concepts and communicating our results clearly. The live demo also showed the practical application of our project. Next time, I would practise more beforehand, simplify the explanations, and reduce the number of features used by the model to make it less complex and easier to interpret. I would also prepare better for possible technical issues and questions from the audience.
 ---
 
 ## 4. Reflection
