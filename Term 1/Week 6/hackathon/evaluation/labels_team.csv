@@ -1,0 +1,101 @@
+post_id,label,doubt,saw_model_score,reason
+1,neutral,0,0,"1+2: feed post, id, severity and description only"
+4,neutral,0,0,"1+2: feed post, id, severity and description only"
+5,neutral,0,0,"1+2: feed post, id, severity and description only"
+6,neutral,0,0,"1+2: feed post, id, severity and description only"
+7,neutral,0,0,"1+2: feed post, id, severity and description only"
+8,neutral,0,0,"1+2: feed post, id, severity and description only"
+10,neutral,0,0,"1+2: feed post, id, severity and description only"
+12,neutral,0,0,"1+2: feed post, id, severity and description only"
+17,neutral,0,0,"4: reports a patch, no pressure"
+21,alarmed,0,1,"3a: two flaws under active exploitation, immediate triage"
+23,neutral,0,0,"1+2: feed post, id, severity and description only"
+24,neutral,0,0,"1+2: feed post, id, severity and description only"
+25,neutral,0,0,"1+2: feed post, id, severity and description only"
+30,reassuring,1,0,"5: 'no exploitation is confirmed', calm update advice; mixed"
+31,neutral,0,0,"1+2: feed post, id, severity and description only"
+36,neutral,0,0,"1+2: feed post, id, severity and description only"
+38,neutral,0,0,"1+2: feed post, id, severity and description only"
+44,neutral,0,0,"1+2: feed post, id, severity and description only"
+49,neutral,0,0,"2+4: describes the attack, fixed in 7.2.9"
+50,neutral,0,0,"1+2: feed post, id, severity and description only"
+51,neutral,0,0,"1+2: feed post, id, severity and description only"
+52,neutral,0,0,"1+2: feed post, id, severity and description only"
+54,neutral,1,0,4: restrict and monitor; 'CRITICAL' is rule 1
+55,alarmed,0,0,3b: patch immediately or isolate (generic template)
+58,neutral,1,0,"3c against 4: no patch yet, but only 'limit exposure, monitor'"
+63,alarmed,0,0,3b: CISA urges patching immediately
+65,neutral,0,0,title of an explainer
+67,neutral,0,0,4: reports a patch
+68,alarmed,0,0,"3b: update ASAP, isolate backup servers"
+69,alarmed,0,0,"3a: actively exploited, added to CISA KEV, prioritise"
+70,alarmed,0,1,"3a: both already exploited, patch those two first"
+75,neutral,0,0,digest of patches
+77,neutral,0,0,"1+2: feed post, id, severity and description only"
+78,neutral,0,0,"1+2: feed post, id, severity and description only"
+79,neutral,0,0,"1+2: feed post, id, severity and description only"
+80,alarmed,0,0,"3a+3b: breach, update ASAP, rebuild if suspicious"
+82,neutral,0,0,"1+2: feed post, id, severity and description only"
+86,neutral,0,0,"1+2 (Japanese): feed post, description and score only"
+87,neutral,0,0,"1+2: feed post, id, severity and description only"
+92,neutral,0,0,"1+2: feed post, id, severity and description only"
+93,neutral,0,0,"1+2: feed post, id, severity and description only"
+96,neutral,0,0,"1+2: feed post, id, severity and description only"
+97,neutral,0,0,"1+2: feed post, id, severity and description only"
+98,neutral,0,1,"1+2: feed post, id, severity and description only"
+100,neutral,0,0,"1+2: feed post, id, severity and description only"
+105,alarmed,1,0,3b: 'Audit roles now'
+106,neutral,0,0,"1+2: feed post, id, severity and description only"
+109,neutral,1,1,4: restrict until patched; 'HIGH' is rule 1
+111,neutral,0,0,"1+2: feed post, id, severity and description only"
+114,neutral,0,0,"1+2 (Japanese): feed post, description and score only"
+121,neutral,1,0,"4: 'Patch to 4.8.2' without urgency; 2,000 exposed servers"
+124,neutral,0,0,"1+2: feed post, id, severity and description only"
+125,neutral,0,0,"1+2: feed post, id, severity and description only"
+126,neutral,0,0,"1+2: feed post, id, severity and description only"
+129,alarmed,1,0,"3c: public PoC, no patch, everything exposed; no call to act"
+130,alarmed,1,0,"3b+3c: exploit public, no patch, 'now'; severity only MEDIUM"
+132,neutral,0,0,"1+2: feed post, id, severity and description only"
+134,neutral,0,0,"1+2: feed post, id, severity and description only"
+135,neutral,0,0,"1+2: feed post, id, severity and description only"
+138,neutral,0,0,"1+2: feed post, id, severity and description only"
+139,neutral,0,0,"1+2: feed post, id, severity and description only"
+142,neutral,0,0,"1+2: feed post, id, severity and description only"
+143,neutral,0,0,"1+2: feed post, id, severity and description only"
+145,neutral,0,0,"1+2: feed post, id, severity and description only"
+147,neutral,0,0,"1+2: feed post, id, severity and description only"
+148,neutral,0,0,"1+2: feed post, id, severity and description only"
+151,neutral,0,0,"1+2: feed post, id, severity and description only"
+155,neutral,0,0,"1+2: feed post, id, severity and description only"
+157,neutral,1,0,"3c against 4: patch not confirmed, 'avoid untrusted inputs'"
+160,neutral,0,0,"(Vietnamese) Python patches a flaw, explainer"
+163,neutral,0,0,"1+2: feed post, id, severity and description only"
+165,neutral,0,0,"1+2: feed post, id, severity and description only"
+167,neutral,0,0,"1+2: feed post, id, severity and description only"
+170,neutral,0,0,"1+2: feed post, id, severity and description only"
+172,neutral,0,0,article title about a new attack class
+173,neutral,0,0,4: reported and fixed
+175,alarmed,0,0,3a: actively exploited by ransomware groups
+176,neutral,0,0,"4: patch under review, watch for it"
+177,alarmed,0,0,3a: ransomware operators actively exploiting
+178,alarmed,1,0,3b: 'Upgrade ... ASAP'; twin of 179 which is neutral
+179,neutral,1,0,"4: 'Upgrade or harden', no urgency word; twin of 178"
+180,neutral,0,0,"1+2: feed post, id, severity and description only"
+181,neutral,0,0,"1+2: feed post, id, severity and description only"
+183,neutral,0,0,"1+2: feed post, id, severity and description only"
+187,neutral,0,0,ranking of CVE ids
+189,neutral,0,0,"1+2: feed post, id, severity and description only"
+190,neutral,0,0,"1+2: feed post, id, severity and description only"
+195,neutral,0,0,"1+2: feed post, id, severity and description only"
+196,neutral,0,0,"1+2: feed post, id, severity and description only"
+198,neutral,0,0,"1+2: feed post, id, severity and description only"
+202,neutral,0,0,"1+2: feed post, id, severity and description only"
+203,alarmed,0,0,3a (Japanese): CISA warns of attacks exploiting the flaw
+204,alarmed,1,0,3b: 'Upgrade ... now'
+206,alarmed,0,0,3a+3b: same text as 205
+207,alarmed,1,0,"6: exploited by ransomware crews, but 'not every estate is affected'"
+208,alarmed,1,0,"3a: 'being used in attacks', one casual line"
+211,alarmed,0,1,3a: actively exploited
+212,alarmed,0,0,3a: exploited in the wild days after disclosure
+213,neutral,0,0,"1+2: feed post, id, severity and description only"
+216,reassuring,0,0,"5: 'None exploited', fixed"

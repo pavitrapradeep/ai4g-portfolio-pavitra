@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets: API keys and the salt for hashing account IDs
+.env
+salt.txt
+
+# The database stays local; the data we submit is in export/
+data/
+*.db
+*.sqlite
+
+# Hugging Face model cache, if it ends up inside the project
+models/
+
+# Word lock files
+~$*

@@ -1,0 +1,63 @@
+{
+  "posts": 100,
+  "tested": "2026-10-13",
+  "models": [
+    {
+      "Model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "Posts": 100,
+      "Accuracy": "0.64",
+      "Precision alarmed": "0.24",
+      "Recall alarmed": "0.35",
+      "F1 alarmed": "0.29"
+    },
+    {
+      "Model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+      "Posts": 100,
+      "Accuracy": "0.60",
+      "Precision alarmed": "0.27",
+      "Recall alarmed": "0.55",
+      "F1 alarmed": "0.36"
+    },
+    {
+      "Model": "cardiffnlp/twitter-roberta-base-sentiment-latest, fine-tuned round 1 (365 posts)",
+      "Posts": 100,
+      "Accuracy": "0.91",
+      "Precision alarmed": "0.79",
+      "Recall alarmed": "0.75",
+      "F1 alarmed": "0.77"
+    },
+    {
+      "Model": "cardiffnlp/twitter-roberta-base-sentiment-latest, fine-tuned round 2 (900 posts)",
+      "Posts": 100,
+      "Accuracy": "0.94",
+      "Precision alarmed": "0.82",
+      "Recall alarmed": "0.90",
+      "F1 alarmed": "0.86"
+    },
+    {
+      "Model": "cardiffnlp/twitter-xlm-roberta-base-sentiment, fine-tuned round 1 (365 posts)",
+      "Posts": 100,
+      "Accuracy": "0.79",
+      "Precision alarmed": "0.52",
+      "Recall alarmed": "0.70",
+      "F1 alarmed": "0.60"
+    },
+    {
+      "Model": "cardiffnlp/twitter-xlm-roberta-base-sentiment, fine-tuned round 2 (900 posts)",
+      "Posts": 100,
+      "Accuracy": "0.91",
+      "Precision alarmed": "0.77",
+      "Recall alarmed": "0.85",
+      "F1 alarmed": "0.81"
+    },
+    {
+      "Model": "Word list",
+      "Posts": 100,
+      "Accuracy": "0.94",
+      "Precision alarmed": "0.94",
+      "Recall alarmed": "0.75",
+      "F1 alarmed": "0.83"
+    }
+  ],
+  "note": "20 of the posts in the test are alarmed."
+}

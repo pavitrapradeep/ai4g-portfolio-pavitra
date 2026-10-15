@@ -1,0 +1,33 @@
+# The watchlist: remote-access and office products that are common in Dutch government.
+# One name per line, matched as whole words, upper or lower case does not matter.
+# A CVE gets the tag "watchlist" when a name is in its NVD record, its CISA entry or a post
+# about it. This is a general starting list, not an inventory: replace it with your own.
+
+# Citrix
+Citrix
+NetScaler
+
+# Fortinet
+Fortinet
+FortiGate
+FortiOS
+FortiProxy
+FortiManager
+FortiWeb
+
+# Ivanti
+Ivanti
+Connect Secure
+Pulse Secure
+Endpoint Manager Mobile
+EPMM
+
+# Microsoft
+Microsoft Exchange
+Exchange Server
+Windows Server
+
+# VMware
+VMware
+ESXi
+vCenter

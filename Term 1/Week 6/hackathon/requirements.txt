@@ -1,0 +1,20 @@
+# Phase 0-1: fetching
+requests
+websockets
+python-dotenv
+
+# Phase 2: the sentiment model and language detection.
+# The model runs on the processor. On Windows and macOS "torch" is already the CPU build;
+# on Linux install it first with: pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch
+transformers
+lingua-language-detector
+
+# Phase 3 (NVD, CISA list, watchlist) and phase 4 (the continuous run) need nothing new.
+
+# Phase 5: the dashboard. Brings pandas and altair with it.
+streamlit
+tzdata  # Windows has no time zone data of its own
+
+# Phase 6: the tokenizer of cardiffnlp/twitter-xlm-roberta-base-sentiment (scripts/run_test.py)
+sentencepiece

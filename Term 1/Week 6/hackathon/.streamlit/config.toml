@@ -1,0 +1,18 @@
+# The dashboard is for one reader on their own machine: the post texts must not be public.
+[server]
+address = "localhost"
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+backgroundColor = "#fbfaf7"
+secondaryBackgroundColor = "#efeee9"
+textColor = "#17191c"
+primaryColor = "#b42318"
+font = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
