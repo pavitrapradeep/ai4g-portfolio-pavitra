@@ -28,6 +28,7 @@ CVE Panic Meter
 
 **My pair partner:**
 Lucas, Iqbal
+
 **Tool we had to use:**
 A pre-trained sentiment model from Hugging Face, cardiffnlp/twitter-roberta-base-sentiment-latest. We fine-tuned it on our own posts and run it locally with the transformers library. We also compared it with cardiffnlp/twitter-xlm-roberta-base-sentiment and a simple word list with no machine learning. (If your assignment named the tool differently, change this line.)
 
@@ -36,14 +37,18 @@ SDG 9, Industry, Innovation and Infrastructure, target 9.1 (resilient infrastruc
 
 
 **What problem does it solve, and for whom?**
+
 The user: the information security officer (CISO) of a small or mid-sized Dutch municipality. The Netherlands has 342 municipalities. In a large city this is a whole department, but in a smaller one it is often a single person who also writes policy, answers audit questions and handles incidents. Our example user, “Ingrid”, is made up to make this concrete: 46, the only security specialist in a municipality of about 35,000 inhabitants.
 Their decision: every week the officer goes through the new software vulnerabilities (CVEs) with the IT manager or the supplier. They decide which fixes go into the regular patch round and which are urgent enough for an emergency patch. That means downtime, overtime and explaining the choice to management.
 The problem: the information they normally rely on arrives too late.
 The official score is late or missing. Only 28% of the CVEs published in 2025 got a full analysis from the US National Vulnerability Database (NVD), and on our first day of collecting, 87 of the 89 CVEs named in our posts had no NVD score yet.
+
 The “known exploited” list is a delayed signal. The US agency CISA only adds a flaw to its list after exploitation is confirmed, and it added only 245 in 2025.
 Attackers are faster than defenders. In 2025, 28.96% of first-exploited vulnerabilities were already exploited on or before the day their CVE was published.
 The early signal exists but nobody can read it. Security specialists often discuss a dangerous flaw online before the official lists catch up. In 2025 a Citrix flaw (CVE-2025-6543) was first described as one that could only crash the system, and it later turned out attackers could take it over. Several critical Dutch organisations were broken into, and the Public Prosecution Service was offline for weeks. Nobody at a small municipality was reading along.
 Why it matters now: since 15 August 2026 the Dutch Cybersecurity Act is in force, and the mayor and aldermen are personally responsible for managing cyber risk. Large organisations can buy commercial threat intelligence, but a municipality of 30,000 inhabitants usually cannot.
+
+
 Who it is for, and who is affected:
 The officer gets a short list of what the security community is most alarmed about, with the official score and the “known exploited” status next to it. They also get the posts behind every peak, to show management why they acted, and an honest indication of how much each score is based on.
 Residents and municipal staff are affected by the outcome, because the civil registry, benefits and permits depend on the patch decision. An unnecessary emergency patch has a cost too, so the tool should help avoid both mistakes.
@@ -63,7 +68,7 @@ You need Python 3.10 or newer and about 1 GB of free disk space. Run these from 
 python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt     # Windows
 '''
-# Linux: first .venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
+Linux: first .venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
 1.Copy .env.example to .env and fill in CONTACT (an email address). An NVD API key is optional.
 Start the collector with .venv\Scripts\python scripts/app/collector.py. The first start downloads the model.
 2.In a second terminal, start the dashboard with .venv\Scripts\streamlit run scripts/app/dashboard.py, then open http://localhost:8501.
