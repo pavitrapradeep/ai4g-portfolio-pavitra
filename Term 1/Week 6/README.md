@@ -31,9 +31,6 @@ Lucas, Iqbal
 **Tool we had to use:**
 A pre-trained sentiment model from Hugging Face, cardiffnlp/twitter-roberta-base-sentiment-latest. We fine-tuned it on our own posts and run it locally with the transformers library. We also compared it with cardiffnlp/twitter-xlm-roberta-base-sentiment and a simple word list with no machine learning. (If your assignment named the tool differently, change this line.)
 
-
-README: hackathon/README.md. The full ethical reflection is in ETHICS.md.
-
 **SDG we had to address:**
 SDG 9, Industry, Innovation and Infrastructure, target 9.1 (resilient infrastructure with equal access for all)
 
