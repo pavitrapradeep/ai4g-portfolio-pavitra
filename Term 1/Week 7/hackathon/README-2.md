@@ -121,9 +121,9 @@ The model runs locally on your CPU, so no API key or Roboflow credits are needed
 
 Link to the live thing
 
-For the video, see the demo: H7 - Demo.
+For the video, see the demo:[ H7 - Demo.](https://www.youtube.com/watch?v=v33Kw0U_xJ8)
 
-For the application code, see hackaton7.py.
+For the application code, see [View the application code (hackaton7.py)](Term%201/Week%207/hackathon/hackaton7.py)
 
 IMPORTANT: The model weights file was too large to upload directly to GitHub. Download it from the hackaton release page.
 
