@@ -53,9 +53,11 @@ We built an AI-powered object-detection prototype using Roboflow and an RF-DETR 
 
 Demo video: https://www.youtube.com/watch?v=v33Kw0U_xJ8
 
-Application code: https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/blob/main/Term%201/Week%207/hackathon/hackaton7/hackaton7.py
+LIVE APP: https://hackaton7-k4bhbahenvwyn6vqiueuvh.streamlit.app/ -> repo and files here
 
-Trained model weights: https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/releases/tag/hackaton
+TO RUN LOCALLY: See the how to run it locally in the section below. IMPORTANT the requires weights.pt file is too big for github, this will thus be in a different folder. There will be a link provided to this
+
+SECOND IMPORTANT NOTICE: The code for the LIVE-APP and Locally run app are different!
 
 **How do I run it?**
 Install Python 3.12.
