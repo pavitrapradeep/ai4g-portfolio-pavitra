@@ -119,12 +119,13 @@ Both models still missed around 38–39% of labelled butts at these settings. Th
 
 The model runs locally on your CPU, so no API key or Roboflow credits are needed. Processing can take some time. Internet is needed to install the packages.
 
-## Link to the live thing
+Link to the live thing
 
-For the video see the demo: [H7 - Demo](https://www.youtube.com/watch?v=v33Kw0U_xJ8)
+For the video, see the demo: H7 - Demo.
 
-For the app code for your own use: see this [link](https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/blob/main/Term%201/Week%207/hackathon/hackaton7/hackaton7.py). **IMPORTANT**! The weights file was too big to upload normally to github, this one can be found and downloaded [here](https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/releases/tag/hackaton)
+For the application code, see hackaton7.py.
 
+IMPORTANT: The model weights file was too large to upload directly to GitHub. Download it from the hackaton release page.
 
 
 ## Ethical reflection
