@@ -125,11 +125,7 @@ For the video see the demo: [H7 - Demo](https://www.youtube.com/watch?v=v33Kw0U_
 
 For the app code for your own use: see this [link](https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/blob/main/Term%201/Week%207/hackathon/hackaton7/hackaton7.py). **IMPORTANT**! The weights file was too big to upload normally to github, this one can be found and downloaded [here](https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/releases/tag/hackaton)
 
-## Who did what?
 
-**Jalie:**
-
-**Pavitra:**
 
 ## Ethical reflection
 
