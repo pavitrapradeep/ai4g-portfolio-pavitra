@@ -125,7 +125,7 @@ For the video, see the demo:[ H7 - Demo.](https://www.youtube.com/watch?v=v33Kw0
 
 For the application code, see https://github.com/pavitrapradeep/ai4g-portfolio-pavitra/blob/63dbda62cfd30b57dd1eaed79f5d27d0ea291ca4/Term%201/Week%207/hackathon/hackaton7.py
 
-IMPORTANT: The model weights file was too large to upload directly to GitHub. Download it from the hackaton release page.
+IMPORTANT: The model weights file was too large to upload directly to GitHub. Download it from the hackaton release page. https://github.com/pavitrapradeep/ai4g-portfolio-pavitra/blob/04246d138b091cf0f56e9687199b4df3853acb1b/Term%201/Week%207/hackathon/weights.pt
 
 
 ## Ethical reflection
