@@ -25,29 +25,68 @@ _List the files, or link to them. Notebook exports, screenshots, scripts._
 
 **Project title:**
 
+Eyes on Earth
+
 **My pair partner:**
+
+Jalie Vermeegen
 
 **Tool we had to use:**
 
+Roboflow
+
 **SDG we had to address:**
 
+SDG 15: Life on Land — specifically Target 15.5, which focuses on reducing habitat degradation, protecting threatened species, and halting biodiversity loss.
+
 **What problem does it solve, and for whom?**
-_Name a real, specific user. "Everyone" is not a user._
+
+Our project addresses the problem of discarded cigarette butts in parks, forests, gardens, and other green spaces in the Netherlands. These butts can harm animals, release toxic substances into the environment, and contribute to pollution. Our main intended users are Dutch municipal staff, park and forest rangers, and landowners who need to identify areas requiring cleaning but have limited time and resources to inspect them manually.
+
 
 **What did you build?**
-_Two or three sentences. What can a user actually do with it?_
+
+We built an AI-powered object-detection prototype using Roboflow and an RF-DETR model. Users can upload a photo of a green space through a Streamlit application, detect visible cigarette butts using bounding boxes, adjust the confidence threshold, and view or download the annotated image. The estimated counts can help users prioritise cleaning and identify potential litter hotspots, although human verification is still necessary.
+
 
 **Link to the live thing (if any):**
-_Deployed URL, workflow export, video demo - whatever proves it works._
+
+Demo video: https://www.youtube.com/watch?v=v33Kw0U_xJ8
+
+Application code: https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/blob/main/Term%201/Week%207/hackathon/hackaton7/hackaton7.py
+
+Trained model weights: https://github.com/JiwiKiwi/AI-For-Good-JalieVermeegen/releases/tag/hackaton
 
 **How do I run it?**
-_Short instructions so someone else can start it._
+Install Python 3.12.
+
+Download hackaton7.py and weights.pt from the links above and place them in the same folder.
+
+Open a terminal in that folder and create a virtual environment:
+
+python -m venv .venv
+
+Activate the environment and install the dependencies:
+
+pip install streamlit rfdetr Pillow
+
+Start the application:
+
+streamlit run hackaton7.py
+
+Open the local URL displayed in the terminal, upload an image, choose a confidence threshold, and click Detect cigarette butts.
+
+The model runs locally on the CPU, so no API key or Roboflow credits are required. Processing may take some time.
+
+
 
 **Who did what?**
-_Be honest about the split of work between you and your partner._
+
+We worked together to brainstorm the project idea, collect the dataset, and develop the overall concept. Jalie primarily handled the model training and testing using Roboflow, while both of us collaborated throughout the project to achieve our goal of detecting cigarette butts in green spaces and addressing environmental pollution.
 
 **Ethical reflection - what are the risks of your tool? Who could it harm?**
-_Every hackathon requires this. One honest paragraph beats three vague ones._
+
+Our tool could help municipalities and park rangers identify cigarette-litter hotspots, but its predictions are not always correct. In our evaluation, the selected Medium model achieved 90.1% precision and 60.7% recall, meaning that it missed around 39% of labelled cigarette butts. False negatives could make polluted areas appear cleaner than they are, while false positives could waste cleaning teams' time and public money. Our dataset contains only 320 images and may not represent different seasons, lighting conditions, locations, or backgrounds. People and private details could also accidentally appear in photographs, so images should be checked before sharing. Furthermore, areas that are photographed less frequently could receive less attention. To reduce these risks, the application labels detections as possible cigarette butts, allows users to adjust the confidence threshold, and warns users to verify results. Photos are processed locally rather than sent to Roboflow by the application. Human inspections and reports from residents should complement the predictions, and the tool should support rather than replace human judgement. Its estimated counts are not proof that an area is clean or that biodiversity has improved.
 
 ### Checklist
 - [ ] Prototype code (or export / workflow file) is in `hackathon/`
@@ -73,5 +112,8 @@ _Every hackathon requires this. One honest paragraph beats three vague ones._
 
 **What is the most important thing I learned this week?**
 
+The most important thing I learned this week is how AI object-detection models can be trained to identify real-world problems using images and a labelled dataset. I also learned that a model can make mistakes, so evaluating its performance and checking its predictions are important before using it in real situations.
+
 **Where does this connect to "AI for Good"?**
-_One concrete link to ethics, sustainability or social impact._
+
+Our project connects to AI for Good because it uses object detection to identify cigarette butts in green spaces, helping municipalities and park rangers prioritise cleaning and reduce environmental pollution. It also taught me that AI should support human decision-making rather than replace it, because missed detections could cause polluted areas to be overlooked.
