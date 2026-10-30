@@ -25,7 +25,7 @@ _List the files, or link to them. Notebook exports, screenshots, scripts._
 
 **Project title:**
 
-Eyes on Earth
+CigDetector
 
 **My pair partner:**
 
