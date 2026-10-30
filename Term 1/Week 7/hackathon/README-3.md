@@ -4,7 +4,7 @@
 > Write them down here once you know them.
 
 ## Project title:
-Eyes on Earth
+CigDetector
 
 **My pair partner:**
 Pavitra Pradeep/Jalie Vermeegen
