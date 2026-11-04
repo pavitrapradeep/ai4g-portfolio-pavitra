@@ -4,16 +4,28 @@
 
 *Computer Vision · Roboflow · RF-DETR · Python · Streamlit*
 
+Demo video:https://youtu.be/47sLWucImHE
+
+roboflow link:https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6ImZNRHlEelRGWHBoZHFTOWR5a0NlRHR1a1k4ejIiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoibnlhYWFtaTEyQGdtYWlsLmNvbSIsImlhdCI6MTc5Mjk1MzI2OH0.kUP7Di1G-_IFL1j_lKbHgRDl797ze11BVHfnSqu6_VQ
+
   Project information    Details
   ---------------------- --------------------------------------------
   Project                CigDetector
-  Student                Pavitra Pradeep
+  
+  Student                Pavitra Pradeep, Jalie
+  
   Hackathon              Hackathon 7 --- Eyes on Earth
+  
   Required tool          Roboflow
+  
   Detection model        RF-DETR Medium
+  
   SDG                    SDG 15 --- Life on Land
+  
   Programming language   Python
+  
   Application            Streamlit
+  
   Inference              Local, using a downloaded model checkpoint
 
 ------------------------------------------------------------------------
@@ -438,17 +450,9 @@ The application can be demonstrated end to end:
 
 ### Demonstration video
 
-\[Add the demo video link here\]
+[\[Add the demo video link here\]](https://youtu.be/47sLWucImHE)
 
-### Screenshots
 
-Add screenshots to the repository showing:
-
--   The Roboflow dataset and image annotations.
--   The dataset split and model evaluation.
--   The running Streamlit application.
--   An uploaded photograph.
--   The model's bounding-box predictions and detection count.
 
 ## 13. Future improvements
 
@@ -568,11 +572,11 @@ Upload a photograph and select **Detect cigarette butts**.
 ## 16. Project links
 
 -   **GitHub repository:** \[Add repository URL\]
--   **Roboflow workspace:** \[Add Roboflow project URL\]
--   **Demo video:** \[Add video URL\]
+-   **Roboflow workspace:** [\[Add Roboflow project URL\]](https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6ImZNRHlEelRGWHBoZHFTOWR5a0NlRHR1a1k4ejIiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoibnlhYWFtaTEyQGdtYWlsLmNvbSIsImlhdCI6MTc5Mjk1MzI2OH0.kUP7Di1G-_IFL1j_lKbHgRDl797ze11BVHfnSqu6_VQ)
+-   **Demo video:** [\[Add video URL\]](https://youtu.be/47sLWucImHE)
 
 ------------------------------------------------------------------------
 
 **CigDetector --- AI for Good, Hackathon 7: Eyes on Earth**\
 **SDG 15 --- Life on Land**\
-**Developed by Pavitra Pradeep**
+**Developed by Pavitra Pradeep/Jalie**
