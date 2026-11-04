@@ -127,6 +127,8 @@ The prototype's main functionality is intended to be demonstrated end to end:
 5. answer quick-check questions and receive feedback; and
 6. review the final summary.
 
+demo video: https://drive.google.com/file/d/1gqMAYWy688loSSLkNhxw-ti5T69StVhp/view
+
 The demonstration video is included as evidence of the working prototype. It shows the product flow; it does not by itself establish that Scrolly improves learning outcomes. That would require testing with representative students and an appropriate evaluation method.
 
 ---
