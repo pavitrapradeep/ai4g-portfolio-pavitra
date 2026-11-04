@@ -571,7 +571,7 @@ Upload a photograph and select **Detect cigarette butts**.
 
 ## 16. Project links
 
--   **GitHub repository:** \[Add repository URL\]
+-   **GitHub repository:** [\[Add repository URL\]](https://github.com/pavitrapradeep/ai4g-portfolio-pavitra/tree/main/Term%201/resit/Week%207/CigDetector)
 -   **Roboflow workspace:** [\[Add Roboflow project URL\]](https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6ImZNRHlEelRGWHBoZHFTOWR5a0NlRHR1a1k4ejIiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoibnlhYWFtaTEyQGdtYWlsLmNvbSIsImlhdCI6MTc5Mjk1MzI2OH0.kUP7Di1G-_IFL1j_lKbHgRDl797ze11BVHfnSqu6_VQ)
 -   **Demo video:** [\[Add video URL\]](https://youtu.be/47sLWucImHE)
 
