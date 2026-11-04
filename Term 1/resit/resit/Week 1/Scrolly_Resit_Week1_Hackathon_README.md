@@ -261,8 +261,6 @@ The following sources support the factual context and SDG descriptions used in t
 4. **United Nations Department of Economic and Social Affairs. (n.d.).** *Goal 4: Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.* https://sdgs.un.org/goals/goal4  
    Official wording and scope for SDG 4 targets 4.1 (primary and secondary education), 4.3 (technical, vocational and tertiary education, including university), and 4.5 (eliminating disparities and ensuring equal access to education and training).
 
-5. **Lovable. (n.d.).** *AI features for your app.* Lovable Documentation. https://docs.lovable.dev/features/ai  
-   Explains the distinction between Lovable's development agent and AI features configured to run inside an application, including AI calls made through Lovable's built-in AI connector. This is general platform documentation, not evidence of the exact model or configuration used by this specific Scrolly project.
 
 ---
 
