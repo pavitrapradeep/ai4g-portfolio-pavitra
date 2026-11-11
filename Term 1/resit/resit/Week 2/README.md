@@ -3,7 +3,10 @@
 
 **AI for Good — Hackathon 2: Flow State**  
 *Automate well-being with n8n*
+
 Pavitra Pradeep
+
+live demo: https://drive.google.com/file/d/1VORGm0_vq_XojE-0yDQANn8occdbaRHt/view?usp=drive_link
 
 ---
 
@@ -308,18 +311,6 @@ Gmail Assessment Report
 
 The workflow is designed to run automatically through its configured n8n trigger rather than requiring the user to manually initiate every assessment.
 
-### Demonstration evidence
-
-The GitHub submission should include:
-
-- Complete n8n workflow JSON.
-- Workflow execution screenshots.
-- Evidence of the AI analysis node.
-- Example input data.
-- Example generated assessment.
-- Gmail delivery screenshot.
-- Presentation slides or demonstration video.
-
 ---
 
 ## How to run
@@ -387,7 +378,21 @@ The project follows these principles:
 
 ### Ethical reflection
 
-The biggest risk is that an inaccurate assessment could either create unnecessary anxiety or falsely reassure an employee who is genuinely struggling. Screen time and meeting duration are imperfect indicators of mental well-being: someone may have a demanding but manageable schedule, while another person may experience significant stress despite apparently normal activity levels. OpenAI may also generate recommendations that do not fit an individual's circumstances. We therefore treat the output as an awareness tool rather than a medical diagnosis, make human judgment essential, and ensure employees retain control over their information. If the workflow fails, produces incomplete data or generates concerning results, employees should not rely on it as their only source of support. A human professional should take over whenever someone needs clinical or personal support. We would not trust automation alone to determine whether someone is experiencing burnout.
+Silent Burnout Sentinel deals with employee workload patterns and mental well-being, which makes ethical responsibility one of the most important aspects of the project. Although AI and automation can help identify potentially unhealthy working patterns, they cannot fully understand an individual's emotional state, personal circumstances or psychological well-being. A system that analyzes screen time, meeting frequency and working hours can identify certain patterns, but it cannot determine with certainty whether an employee is experiencing stress, exhaustion or burnout.
+
+One of the biggest ethical risks is the possibility of inaccurate assessments. A false high-risk classification could create unnecessary anxiety, make employees feel that something is seriously wrong with their health, or cause them to lose confidence in their ability to manage their workload. On the other hand, a false low-risk classification could be even more concerning because it might reassure an employee who is actually struggling and delay them from seeking appropriate support. For example, an employee may work relatively few hours but experience significant stress because of personal circumstances, workplace pressure or emotional difficulties that the system cannot observe. Similarly, someone who spends ten hours working on a computer may be comfortable with their schedule and may not necessarily be experiencing burnout. Therefore, workload indicators should never be treated as direct measurements of mental health.
+
+Another important concern is the reliability of AI-generated recommendations. OpenAI may misunderstand the context of an employee's workload or generate suggestions that are unsuitable for their individual circumstances. An employee experiencing serious psychological distress may require professional support rather than generic recommendations such as taking more breaks or reducing meeting time. The AI could also overlook important differences between employees, including their roles, responsibilities, working environments and personal situations. For this reason, the system must communicate its findings as possible workload concerns rather than confirmed health conditions. Its output should be used to encourage self-reflection and awareness, not to diagnose, label or make decisions about employees.
+
+Employee privacy and data protection are equally important. Workload information, screen-usage patterns, working hours and meeting schedules can reveal sensitive details about an individual's professional and personal life. If this information is accessed by unauthorized people or shared without permission, it could damage an employee's privacy, trust and sense of security. There is also a risk that employers could misuse the system to monitor employees, compare their activity or evaluate their productivity instead of supporting their well-being. To reduce these risks, the system should collect only the information necessary for its intended purpose, avoid recording private screen contents or personal messages, protect authentication credentials and restrict access to individual assessment reports. Employees should be informed about what information is collected, how it is processed and how the resulting reports are used. Their consent should be obtained before collecting activity information, and they should retain control over their personal assessment data.
+
+We must also consider what happens when the automation is incorrect, delayed or unavailable. An n8n workflow may fail because of an API outage, invalid credentials, missing input data, an incorrect calculation or an interrupted execution. In such situations, the employee might not receive an assessment or could receive an incomplete or misleading report. A delayed assessment could also fail to reflect the employee's current workload. The system should therefore make failures visible, avoid generating conclusions from incomplete information and communicate when an assessment could not be completed. Employees should never assume that the absence of an alert means that their workload or mental health is healthy.
+
+Human involvement must remain central to the decision-making process. Silent Burnout Sentinel is intended to assist employees in recognizing potentially concerning workload patterns, not to replace conversations with managers, mental health professionals or healthcare providers. If an employee repeatedly receives concerning assessments, experiences persistent stress or feels unable to manage their workload, they should be encouraged to seek appropriate human support. Any clinical concerns must be handled by qualified professionals. Similarly, employers should not use the system's risk classifications as the sole basis for performance evaluations, disciplinary action, promotions or other employment-related decisions.
+
+We would not fully trust an automated system to determine whether someone is experiencing burnout because mental health is complex and cannot be understood through numerical activity indicators alone. We would trust it as an additional awareness tool, provided that its limitations are clearly communicated, its recommendations are treated cautiously and employees remain in control of their information.
+
+Ultimately, the responsibility of Silent Burnout Sentinel is not to decide whether an employee is healthy or unhealthy, but to encourage healthier working habits and make potentially concerning workload patterns easier to recognize. Automation should stop where individual judgment, emotional understanding and professional expertise become necessary. Human well-being must always take priority over automated assessments.
 
 ---
 
